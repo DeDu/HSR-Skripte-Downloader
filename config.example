@@ -1,0 +1,4 @@
+BASELINK="https://skripte.hsr.ch/"
+remote_dirs=("Informatik/Fachbereich/Objektorientierte_Programmierung/" "Informatik/Fachbereich/Informations-_und_Codierungstheorie/ICTh/Vorlesung/" )
+local_dir=/home/USER/HSR
+log_file=$local_dir/download.log
