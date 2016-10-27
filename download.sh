@@ -3,7 +3,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if [ -e $DIR/config ]
 then
     source $DIR/config
-    wget -q --no-check-certificate --spider $BASELINK
+    wget -q --no-check-certificate --spider timeout=2 $BASELINK
     OUTPUT=$?
     echo "Server not accessible..." > $log_file
     if [ $OUTPUT -eq 0 ]
